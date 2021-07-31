@@ -33,8 +33,13 @@ body {
 	font-size: 1.125em;
 }
 
+.menu-logo{
+	margin: 0 10px;
+}
+
 .menu-nav{
 	flex: 1;
+	margin: 0 10px;
 	align-self: center;
 }
 
@@ -292,4 +297,44 @@ h2.produtos-mineiro::before {
 
 .footer-img{
 	margin: 0 10px;
+}
+
+
+/* Responsividade */
+
+@media(max-width: 739px){
+	.container{
+		flex-direction: column;
+		max-width: 300px;
+	}
+
+	.menu-nav{
+		margin: 0px;
+	}
+
+	.menu-logo{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.menu-nav ul li a {
+		padding: 0 10px 0 0;
+	}
+
+	.intro{
+		padding: 60px 0;
+	}
+
+	.produtos-item p{
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+	.assine-info{
+		margin: 0 0 40px 0;
+	}
+
+	.assine form{
+		margin: 0px;
+	}
 }
